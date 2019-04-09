@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+      <!-- Insert title here -->
+        <title>Web Visualization Wind Speed (Latitude)</title>
+      
+        <!-- reset css -->
+        <link rel="stylesheet" href="reset.css">
+        <!-- Bring in our bootstrap stylesheet -->
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+
+<body style="background-color:#e7eaec">
+    
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="index.html"> 
+                <span class="nav-color">Latitude</span></a>
+            </div>
+            <ul class="navbar-nav">
+                <!-- Home button -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">  
+                    Weather and Latitude</a>
+                    
+                </li>
+            </ul>
+
+
+    <div class = "container">
+        <div class="row">                          
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        
+            <div class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Plot<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Max_Temperature.html">Max Temperature</a></li>
+                            <li><a href="Humidity.html">Humidity</a></li>
+                            <li><a href="Cloudiness.html">Cloudiness</a></li>
+                            <li><a href="Wind_Speed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Comp.html"> Comparison</a></li>
+                    <li><a href="Data.html"> Data</a></li>                                           
+                </div>
+            </div>      
+        </nav>
+    
+        <div class = "container">
+            <div class="row">                          
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+
+                        <h2>Max Speed</h2>
+                        <hr>
+                        <img class="Max Speed image" src="resources\CityLatitudeVSWindSpeed.png" alt="Wind Speed" >
+                        <p>This graph shows us that the wind is correlated with latitude. Wind speed for each sampled city also 
+                            seems to increase with distance away from the equator. </p>
+                    <br>        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                        <div class="panel-body">                                    
+                            <h2>Visualizations</h2>
+                            <hr>
+
+                           <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="Max_Temperature.html"><img class = "img img-responsive" src="resources\CityLatitudeVSTemp.png" style="width:100%" alt=""></a></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="Humidity.html"><img class = "img img-responsive" src="resources\CityLatitudeVSHum.png" style="width:100%" alt=""></a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="Cloudiness.html"><img class = "img img-responsive" src="resources\CityLatitudeVSCloudiness.png" style="width:100%" alt=""></a></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="Wind_Speed.html"><img class = "img img-responsive" src="resources\CityLatitudeVSWindSpeed.png" style="width:100%" alt=""></a></div>
+                                </div>
+                                
+                        </div>
+                
+                    </div>     
+            </div>    
+    </div>
+
+    
+</body>
+</html>
+
+       
+        

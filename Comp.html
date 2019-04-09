@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+      <!-- Insert title here -->
+        <title>Web Visualization Comparison (Latitude)</title>
+      
+        <!-- reset css -->
+        <link rel="stylesheet" href="reset.css">
+        <!-- Bring in our bootstrap stylesheet -->
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+
+<body style="background-color:#e7eaec">
+    
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="index.html"> 
+                <span class="nav-color">Latitude</span></a>
+            </div>
+            <ul class="navbar-nav">
+                <!-- Home button -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">  
+                    Weather and Latitude</a>
+                    
+                </li>
+            </ul>
+
+
+
+    <!-- right side of navbar -->
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown ml-auto">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
+            aria-haspopup="true" aria-expanded="false">Plot</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Max_Temperature.html">Max Temperature</a>
+                <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                <a class="dropdown-item" href="Cloudines.html">Cloudiness</a>
+                <a class="dropdown-item" href="Wind_Speed.html">Wind Speed </a>
+            </div>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="Comp.html">Comparison
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Data.html">Data</a>
+        </li>
+    </ul>
+  </nav>
+
+    <div class='row'>
+        <div class="col-md-12">
+        </div>
+    </div>
+    <!-- Header -->
+  <div class="container-fluid">
+    <div class='row align-items-center'>
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="intro"> Comparisons</h1>
+            </br>
+            </br>
+        </div>
+        <div class="col-lg-2">
+            </br>
+            </br>
+        </div>
+    </div> 
+    <hr> <!-- horizontal line -->
+    
+    <div class="row">
+        <div id="comp_note" class="col-md-12">
+            <p> Click any of the graphs below </p> 
+            </br>
+
+    </div> 
+
+    <!-- first row of graphs -->
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-lg-5">
+            </br>
+            <figure>
+                <figcaption class ="caption">Max Temperature vs. Latitude</figcaption>
+                <a href="Max_Temperature.html">
+                    <img src="resources\CityLatitudeVSTemp.png"
+                        alt = "Max Temp vs. Latitude" height="450" width="600">
+                </a>
+                
+            </figure>
+        </div>
+        <div class="col-lg-5">
+            </br>
+            <figure>
+                <figcaption class ="caption"> Humidity vs. Latitude</figcaption>
+                <a href="Humidity.html">
+                    <img src="resources\CityLatitudeVSHum.png"
+                      alt = "Humidity vs. Latitude" height="450" width="600">
+                </a>
+            </figure>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+
+    <!-- second row of graphs -->
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-lg-5">
+            <figure>
+                <figcaption class ="caption"> Cloudiness vs. Latitude</figcaption>
+                <a href="Cloudiness.html">
+                    <img src="resources\CityLatitudeVSCloudiness.png"
+                        alt = "Cloudiness vs. Latitude" height="450" width="600">
+                </a> 
+            </figure>
+        </div>
+        <div class="col-lg-5">
+            <figure>
+                <figcaption class ="caption"> Wind Speed vs. Latitude</figcaption>
+                <a href="Wind_Speed.html">
+                    <img src="resources\CityLatitudeVSWindSpeed.png"
+                      alt = "Wind Speed vs. Latitude" height="450" width="600">
+                </a>
+            </figure>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+ 
+
+</body>
+</html>

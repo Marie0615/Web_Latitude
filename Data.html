@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+      <!-- Insert title here -->
+        <title>Web Visualization Data (Latitude)</title>
+      
+        <!-- reset css -->
+        <link rel="stylesheet" href="reset.css">
+        <!-- Bring in our bootstrap stylesheet -->
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+
+<body style="background-color:#e7eaec">
+    
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="index.html"> 
+                <span class="nav-color">Latitude</span></a>
+            </div>
+            <ul class="navbar-nav">
+                <!-- Home button -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">  
+                    Weather and Latitude</a>
+                    
+                </li>
+            </ul>
+
+
+    <div class = "container">
+        <div class="row">                          
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        
+            <div class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Plot<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Max_Temperature.html">Max Temperature</a></li>
+                            <li><a href="Humidity.html">Humidity</a></li>
+                            <li><a href="Cloudiness.html">Cloudiness</a></li>
+                            <li><a href="Wind_Speed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Comp.html"> Comparison</a></li>
+                    <li><a href="Data.html"> Data</a></li>                                           
+                </div>
+            </div>      
+        </nav>
+        <div class='row'>
+                <div class="col-md-12">
+                            </div>
+            </div>
+          </div> <!-- ends background color -->
+    <!-- Header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h1 class="intro"> Weather Data </h1>
+            </div>
+            <div class="col-md-4"> </br></br></br></br></br> </div>
+        </div>
+        <hr> <!-- horizontal line -->
+
+        <!-- Option to view dataset in it's own window -->
+        <div class="row">
+            <div class="col-md-4">
+                <p> <a  
+                    href="resources\convertcsv.htm"> Click here </a>
+                    to view just the dataset. 
+                </p> 
+            </div>
+            <div class="col-md-4">
+                </br>
+            </div>
+            <div class="col-md-4"></div>
+        </div> 
+           
+    <!-- Content: Data -->
+    <!-- *** Start table section *** -->
+    <!-- generated from http://www.convertcsv.com/csv-to-html.htm with citySample_dataframe.csv-->
+        <!-- Import converted csv files to table-->
+        <div w3-include-html="resources\convertcsv.htm"></div> 
+        <script>
+            w3.includeHTML();
+        </script>
+        <!-- End of table section -->
+
+    <!-- added row for spacing -->
+    <div class="row">
+        <div class="col-md-12">
+            </br> <!-- line break to push header down -->
+            <div id="bottom_space_data_pg" style="background-color:white;"> </div>
+        </div>
+    </div>
+
+    <!-- Visualizations -->
+    <!-- Header --> 
+        <!-- With new footer positions in the CSS file that forces it to the bottom! -->
+    <div id = "bottom_space_data_pg" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                </br> <!-- line break to push header down -->
+            </div>
+        </div>
+        <!-- Header content for visualization section -->
+        <div class="row align-items-center">
+            <div class = 'col-md-4'></div>
+            <div class="col-lg-4">
+                <h3 id="bot_header"> Visualizations</h3>
+            </div>
+            <div class = 'col-md-4'></div>
+        </div>
+
+        <div class="row">
+                <div class="col-lg-3">
+                    <a href="Max_Temperature.html">
+                        <img src="resources\CityLatitudeVSTemp.png"
+                        alt = "Latitude VS Max Temperature" height="225" width="300">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="Humidity.html">
+                            <img src="resources\CityLatitudeVSHum.png"
+                            alt = "Latitude VS Humidity" height="225" width="300">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="Cloudiness.html">
+                        <img src="resources\CityLatitudeVSCloudiness.png"
+                        alt = "Latitude VS Cloudiness" height="225" width="300">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="Wind_Speed.html">
+                            <img src="resources\CityLatitudeVSWindSpeed.png"
+                            alt = "Latitude Wind Speed" height="225" width="300">
+                    </a>
+                </div>
+            </div>
+        
+            <hr>
+        </div>
+    </body>
+    </html>
